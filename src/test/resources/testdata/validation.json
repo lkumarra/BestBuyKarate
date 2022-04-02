@@ -1,0 +1,110 @@
+{
+	"Products": {
+		"total": "#number",
+		"limit": "#number",
+		"skip": "#number",
+		"data": [
+			{
+				"id": "#number",
+				"name": "#string",
+				"type": "#string",
+				"price": "#number",
+				"upc": "#string",
+				"shipping": "#number",
+				"description": "#string",
+				"manufacturer": "#string",
+				"model": "#string",
+				"url": "#string",
+				"image": "#string",
+				"createdAt": "#string",
+				"updatedAt": "#string",
+				"categories": [
+					{
+						"id": "#string",
+						"name": "#string",
+						"createdAt": "#string",
+						"updatedAt": "#string"
+					}
+				]
+			}
+		]
+	},
+	"Categories": {
+		"total": "#number",
+		"limit": "#number",
+		"skip": "#number",
+		"data": [
+			{
+				"id": "#string",
+				"name": "#string",
+				"createdAt": "#string",
+				"updatedAt": "#string",
+				"subCategories": [
+					{
+						"id": "#string",
+						"name": "#string",
+						"createdAt": "#string",
+						"updatedAt": "#string"
+					}
+				],
+				"categoryPath": [
+					{
+						"id": "#string",
+						"name": "#string",
+						"createdAt": "#string",
+						"updatedAt": "#string"
+					}
+				]
+			}
+		]
+	},
+	"Stores": {
+		"total": "#number",
+		"limit": "#number",
+		"skip": "#number",
+		"data": [
+			{
+				"id": "#number",
+				"name": "#string",
+				"type": "#string",
+				"address": "#string",
+				"address2": "#string",
+				"city": "#string",
+				"state": "#string",
+				"zip": "#string",
+				"lat": "#number",
+				"lng": "#number",
+				"hours": "#string",
+				"createdAt": "#string",
+				"updatedAt": "#string",
+				"services": [
+					{
+						"id": "#number",
+						"name": "#string",
+						"createdAt": "#string",
+						"updatedAt": "#string",
+						"storeservices": {
+							"createdAt": "#string",
+							"updatedAt": "#string",
+							"storeId": "#number",
+							"serviceId": "#number"
+						}
+					}
+				]
+			}
+		]
+	},
+	"Services": {
+		"total": "#number",
+		"limit": "#number",
+		"skip": "#number",
+		"data": [
+			{
+				"id": "#number",
+				"name": "#string",
+				"createdAt": "#string",
+				"updatedAt": "#string"
+			}
+		]
+	}
+}
